@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/-sword_86811.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styled.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Tiny Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <!-- FontAwesome -->
+    <link href="assets/lib/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+
+    
+
+    <title>Teste</title>
+  </head>
+  <body>
+    <!-- Cabeçario -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/img/Logo Teste Light.svg" style="width: 80px;"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav"  >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link scrollTo" href="#home">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollTo" href="#section-sobre">SOBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollTo" href="#section-gallery">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollTo" href="#section-noticiais">NOTÍCIAIS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollTo" href="#section-contato">CONTATO</a>
+              </li>
+            </ul>
+          </div>
+          <div class="icon">
+            <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-square" style="color: white;"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram-square" style="color: white;"></a>
+            <a href="https://www.linkedin.com/home" target="_blank" class="fab fa-linkedin" style="color: white;"></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carrocel -->
+    
+    <div class="slider-prev button-left position-absolute">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+
+    <div class="slider-next button-right position-absolute">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div id="home" class="my-slider vh-100 position-relative">
+      <div class="slider01">
+        <div class="container d-flex h-100 justify-content-center ">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center d-flex flex-column aling-items-center justify-content-center">
+                <h3>Lorem ipsum</h3>
+                <h6>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</h6>
+            </div>
+            <div class="col-md-6 mt-3">
+              <form class="form">
+                <div class="form-group">
+                  <h4 class="text-center ">Lorem ipsum</h4>
+                    <input type="text" id="input-form" placeholder="Nome*">
+                    <input type="text" id="input-form" placeholder="Telefone*">
+                    <input type="text" id="input-form" placeholder="E-mail*">
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Deseja receber novidades por e-mail?</label>
+                  </div>
+                  <div class="form-button">
+                    <button type="submit" class="btn-dark pe-1 w-100" id="btn-form">
+                      <i class="far fa-paper-plane"></i>
+                      <label>Enviar</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider02">
+        <div class="container d-flex h-100 justify-content-center align-items-center text-center">
+          <div class="row">
+            <div class="col-12 text-white">
+                <h3>Lorem ipsum</h3>
+                <h6>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider03">
+        <div class="container d-flex h-100 justify-content-center align-items-center text-center">
+          <div class="row">
+            <div class="col-12 text-white">
+                <h3>Lorem ipsum</h3>
+                <h6>ipsum commodo bibendum ultricies mattis ipsum commodo bibendum</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão de scroll top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <!-- Call Action -->
+    <section id="section-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="text container">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere, metus vitae efficitur rutrum</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="call-button">
+            <button onclick="topFunction()" class="btn-dark pe-1 scrollTo" id="call-button">
+              <label>Lorem ipsum</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="section-sobre">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 img-left p-0">
+            <img src="assets/img/004.jpg"/>
+          </div>
+          <div class="col-md-6">
+                <h4 class="sobre-titulo">Sobre o Jogo</h4>
+                <p class="sobre-paragrafo">Fire Emblem é uma série de jogos de estratégia por turnos nos quais o jogador controla seus personagens por um mapa com o objetivo de derrotar os inimigos para cumprir com a missão do capítulo: tomar um castelo, sobreviver ao ataque inimigo, acabar com todos os inimigos do mapa ou derrotar um chefe. A saga também contém aspectos de RPG tradicionais; assim sendo, o jogador pode usar seu dinheiro para comprar armas e objetos especiais das lojas, visitar povos, ter conversações com PNJ ou personagens antagonistas, assim como trocar objetos entre personagens e adquirir pontos de experiência em cada luta para aumentar o nível e as características de cada unidade.</p>
+                <p class="sobre-paragrafo">Até certa parte do decorrer do jogo, o sistema de luta de Fire Emblem é básico, Espadas ganham de machados, machados de lanças e lanças ganham de espadas. Arqueiros atacam não me diga a distância e não conseguem revidar quando são atacados de perto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+
+    <section id="section-gallery">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row" >
+                <div class="col-md-12 text-center text-light mt-3">
+                  <h3>Galeria</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="row row-dimensao">
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/f/f8/Seliph_%26_Julia_SR%2B_by_Rika_Suzuki.png/revision/latest/scale-to-width-down/1000?cb=20191212160409" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/f/f8/Seliph_%26_Julia_SR%2B_by_Rika_Suzuki.png/revision/latest/scale-to-width-down/1000?cb=20191212160409" alt=""/>
+                </a>
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/a/a1/Cipher_Series_6_Artwork.png/revision/latest/scale-to-width-down/1000?cb=20170218194441" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/a/a1/Cipher_Series_6_Artwork.png/revision/latest/scale-to-width-down/1000?cb=20170218194441" alt=""/>
+                </a>
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/4/47/Marth_and_Male_Kris_R_by_Daisuke_Izuka.png/revision/latest/scale-to-width-down/1000?cb=20181213141257" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/4/47/Marth_and_Male_Kris_R_by_Daisuke_Izuka.png/revision/latest/scale-to-width-down/1000?cb=20181213141257" alt=""/>
+                </a>
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/6/6a/Hector_Lyn_%26_Eliwood_SR_by_Rika_Suzuki.png/revision/latest/scale-to-width-down/1000?cb=20180629033500" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/6/6a/Hector_Lyn_%26_Eliwood_SR_by_Rika_Suzuki.png/revision/latest/scale-to-width-down/1000?cb=20180629033500" alt=""/>
+                </a>
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/0/09/Celica_Alm_and_Valbar_by_Aoji.jpg/revision/latest/scale-to-width-down/1000?cb=20171219170555" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/0/09/Celica_Alm_and_Valbar_by_Aoji.jpg/revision/latest/scale-to-width-down/1000?cb=20171219170555" alt=""/>
+                </a>
+                <a title="image" class="col-md-4 col-sm-6" data-fancybox="images" href="https://static.wikia.nocookie.net/fireemblem/images/7/74/SMT_x_FE_Teaser_Direct.jpg/revision/latest/scale-to-width-down/1000?cb=20150402043547" >
+                  <img src="https://static.wikia.nocookie.net/fireemblem/images/7/74/SMT_x_FE_Teaser_Direct.jpg/revision/latest/scale-to-width-down/1000?cb=20150402043547" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Noticiais -->
+    <section id="section-noticiais" style="height: 100%;">
+     <div class="p-4 container">
+      <div class="row" >
+        <div class="col-md-12 text-center text-dark mt-3">
+          <h3>Notícias</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: space-between;">
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://literaturaempauta.com.br/wp-content/uploads/2016/04/Fire-Emblem-Fates-Birthright-super-capa-1024x914.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Fire Emblem Fates Birthright</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="http://literaturaempauta.com.br/wp-content/uploads/2016/12/Conquest-Fire-Emblem-Capa.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Fire Emblem Fates Conquest</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://www.bhgames.com.br/imagem/index/12439273/G/fire_emblem_awakening.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Fire Emblem Fates Awakening</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Contato -->
+    <section   id="section-contato"  class="background-contato">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+            <form  class="form-contato">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4 class="display-4">Contato</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt posuere purus, eget varius quam tempor a.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-control"  placeholder="Telefone">
+                </div>
+              </div>
+              <div class="row  mb-2">
+                <div class="col-12">
+                  <input type="text" class="form-control"  placeholder="Email">
+                </div>
+              </div>
+              <div class="row  mb-2">
+                <div class="col-12">
+                  <input type="text" class="form-control"  placeholder="Assunto">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-12">
+                  <textarea rows="4" class="form-control" placeholder="Mensagem"></textarea>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn-dark w-50" id="btn-form" style="margin-top: 10px;border-radius: 5px;height: 2em;">
+                    <i class="far fa-paper-plane"></i>
+                    <label>Enviar</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.google.com/?gws_rd=ssl" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <section style="padding: 15px;">
+        <div class="container">
+          <!-- Grid row -->
+          <div class="row d-flex justify-content-center align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Fire Emblem Page
+              </h6>
+              <p>Nunc in libero sodales, varius nisl sed, luctus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <div class="accordion-wrapper w-100">
+                <div class="accordion">
+                  <input type="radio" name="radio-a" id="check1" checked>
+                  <label class="accordion-label" for="check1">Accordion 1</label>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input type="radio" name="radio-a" id="check2">
+                  <label class="accordion-label" for="check2">Accordion 2</label>
+                  <div class="accordion-content">
+                    <p>Sed in nisl in ligula ultricies dictum non non libero. Pellentesque at leo vitae enim ultricies dapibus in at libero.</p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <input type="radio" name="radio-a" id="check3">
+                  <label class="accordion-label" for="check3">Accordion 3</label>
+                  <div class="accordion-content">
+                    <p>uisque quis posuere sapien, a pharetra nunc. Sed pretium condimentum gravida. Aenean sagittis urna at cursus malesuada.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">© 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FireEmblemAwakening.com</a>
+      </div>
+    </footer>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Simple Scrollspy -->
+    <script src="/path/to/dist/simple-scrollspy.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script   
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <!-- Tiny Slider Script -->
+    <script>
+      var slider = tns({
+        container: '.my-slider',
+        items: 1,
+            gutter: 10,
+            nav: false,
+            controls: false,
+            autoplay: true,
+            autoplayButtonOutput: false,
+            loop: true,
+            lazyload: true,
+            mouseDrag: true,
+            slideBy: 'page',
+        responsive: {
+          640: {
+            edgePadding: 0,
+            gutter: 20,
+          },
+          700: {
+            gutter: 30
+          },
+        }
+      });
+
+            $('.slider-prev').click(function () {
+                slider.goTo('prev');
+            });
+
+            $('.slider-next').click(function () {
+                slider.goTo('next');
+            });
+
+            $(document).ready(function() {
+
+              /* This is basic - uses default settings */
+
+              $("a#single_image").fancybox();
+
+              /* Using custom settings */
+
+              $("a#inline").fancybox({
+                'hideOnContentClick': true
+              });
+
+              /* Apply fancybox to multiple items */
+
+              $("a.group").fancybox({
+                'transitionIn'	:	'elastic',
+                'transitionOut'	:	'elastic',
+                'speedIn'		:	600, 
+                'speedOut'		:	200, 
+                'overlayShow'	:	false
+              });
+
+            });
+    </script>
+
+    <!-- FancyBox Script -->
+    <script>
+      $('[data-fancybox="images"]').fancybox({
+          infobar: false,
+          buttons: [
+              "close"
+          ],
+      });
+    </script>
+  </body>
+</html>
